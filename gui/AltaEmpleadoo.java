@@ -392,8 +392,18 @@ public class AltaEmpleadoo extends javax.swing.JFrame {
         emp.setApPaterno(this.jTextField2.getText());
         emp.setApMaterno(jTextField3.getText());
         emp.setEdad(Integer.parseInt(jTextField4.getText() ));
-        emp.setCurp (jTextField5.getText());
+        emp.setCurp (jTextField5.getText()); 
+        emp.setDomicilio(new Direccion ());
         emp.getDomicilio().setCalle(this.jTextField6.getText ());
+        emp.getDomicilio().setNumero(this.jTextField7.getText());
+        emp.getDomicilio().setColonia(this.jTextField8.getText());
+        emp.getDomicilio().setDelegacion(this.jTextField9.getText());
+        emp.getDomicilio().setestado(this.jTextField10.getText());
+        emp.setNumeroEmpleado(Integer.parseInt(this.jTextField11.getText()));
+        emp.setDepartemento(this.jTextField12.getText());
+        emp.setSueldo(Float.parseFloat(this.jTextField13.getText()));
+        emp.setHorasExtra(Integer.parseInt(this.jTextField14.getText()));
+        int confirmar=JOptionPane.showConfirmDialog(this, "¿Deseas guardar estos datos?")
         
     }//GEN-LAST:event_jTextField15ActionPerformed
 
@@ -412,7 +422,7 @@ public class AltaEmpleadoo extends javax.swing.JFrame {
         this.jTextField12.setText("");
         this.jTextField13.setText("");
         this.jTextField14.setText("");
-        
+        this.jText    
     }
     
     private void jButton6MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButton6MouseClicked
